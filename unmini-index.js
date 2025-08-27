@@ -44,6 +44,10 @@ $(".five").click(function() {
 $(".x4").click(function() {
     $(".links").fadeOut(30);
 });
+$("#div4").dblclick(function() {
+    $(".links").fadeToggle(30);
+    playClickSound1();
+});
 // draggable
 $( function() {
     $("#div5").draggable();
@@ -112,3 +116,4 @@ $(".notbuttons").click(function() {
         button.removeClass("pressed");
     }, 200);
 })
+
